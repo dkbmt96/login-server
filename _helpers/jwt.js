@@ -22,5 +22,5 @@ async function isRevoked(req, payload, done) {
         return done(null, true);
     }
 
-    done()
-};
+    done();
+}
