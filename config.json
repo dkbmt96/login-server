@@ -1,4 +1,4 @@
 {
-    "connectionString": "mongodb://localhost/node-mongo-registration-login-api",
+    "connectionString": "mongodb+srv://admin:QwjGbMmo3vweqpEF@cluster0-ihvjo.gcp.mongodb.net/test?retryWrites=true&w=majority",
     "secret": "hellomyfriend"
 }
