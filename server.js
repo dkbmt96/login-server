@@ -1,13 +1,13 @@
 require('rootpath')();
-import express from 'express';
+const express = require('express');
 const app = express();
-import cors from 'cors';
-import { urlencoded, json } from 'body-parser';
-import jwt from '_helper/jwt';
-import errorHandler from '_helper/error-handler';
+const cors = require('cors');
+const bodyParser = require('body-parser');
+const jwt = require('_helper/jwt');
+const errorHandler = require('_helper/error-handler');
 
-app.use(urlencoded({extended: false}));
-app.use(json());
+app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.json());
 app.use(cors());
 
 //use JWT auth to secure the api
